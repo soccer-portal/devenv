@@ -2,7 +2,7 @@
 params = {
   "hostname" => "sp-middleware-local",
   "ip" => "10.99.3.100",
-  "ports" => { 3306 => 13306, 6379 => 16379 },
+  "ports" => { 3306 => 13306, 6379 => 16379, 8081 => 18081, 8082 => 18082 },
   "compose_version" => "1.22.0" # current version @ 2018/10
 }
 
