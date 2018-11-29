@@ -9,6 +9,13 @@ services:
       MYSQL_ROOT_PASSWORD: pass
     volumes:
       - mysql-data:/var/lib/mysql
+  neo4j:
+    image: neo4j:latest
+    ports:
+      - "7474:7474"
+      - "7473:7473"
+      - "7678:7678"
+      - "7687:7687"
   swagger-editor:
     image: swaggerapi/swagger-editor:latest
     ports:
